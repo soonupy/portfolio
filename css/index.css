@@ -304,7 +304,7 @@ main {
     main {
         height: 100%;
         #intro {
-            position: absolute;
+            /* position: absolute; */
             top: 0;
 
             margin-block: 100px 50px;
@@ -851,7 +851,7 @@ main {
 }
 @media all and (max-width:767px) {
     #overview {
-        margin-top: 512px;
+        /* margin-top: 512px; */
         margin-bottom: 50px;
         font-size: 0.875em;
         .desc {
