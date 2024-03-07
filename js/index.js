@@ -40,7 +40,6 @@ $(function () {
                 start: "top 70%",
                 end: "bottom",
                 toggleActions: "play",
-                marker:true
             }
         });
     });
