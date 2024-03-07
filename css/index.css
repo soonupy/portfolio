@@ -286,7 +286,7 @@ main {
     .title h1 {
         display: block;
         color: #fff;
-        font-size: 2.5em;
+        font-size: 2.25em;
         font-family: pretendard;
         bottom: 0;
 
@@ -295,7 +295,7 @@ main {
 
         span {
             font-weight: 200;
-            font-size: 2em;
+            font-size: 1.875em;
             line-height: 1.25;
         }
     }
@@ -315,6 +315,22 @@ main {
             font-size: 0.75em;
             bottom: 0;
         }
+        .title h1 {
+        display: block;
+        color: #fff;
+        font-size: 2em;
+        font-family: pretendard;
+        bottom: 0;
+
+        text-align: left;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.35);
+
+        span {
+            font-weight: 200;
+            font-size: 1.875em;
+            line-height: 1.25;
+        }
+    }
     }
 }
 #overview {
