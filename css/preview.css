@@ -618,13 +618,13 @@ section {
 }
 @media all and (max-width:767px) {
     section {
-    margin: 110px auto 80px !important;
+    margin: 110px auto 80px auto !important;
     padding: 80px 20px 60px 20px !important;
     transition: padding 0.25s ease;
     #project {
         margin: 0 auto;
         font-family: pretendard;
-            padding-inline: 60px;
+            padding-inline: 20px !important;
             margin: 0 auto;
 
         .inner {
