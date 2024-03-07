@@ -308,9 +308,9 @@ main {
             /* position: absolute; */
             top: 0;
             height: 172px;
-            margin-block: 100px 50px;
+            margin-block: 200px 50px;
             margin-inline: 0 auto;
-            padding: 100px 20px 0;
+            padding: 0px 20px 0;
             /* width: 1280px; */
             background-size: 90%;
             font-size: 0.75em;
