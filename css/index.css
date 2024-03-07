@@ -304,9 +304,10 @@ main {
     main {
         height: 100%;
         #intro {
+            position: relative;
             /* position: absolute; */
             top: 0;
-
+            height: 172px;
             margin-block: 100px 50px;
             margin-inline: 0 auto;
             padding: 100px 20px 0;
