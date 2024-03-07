@@ -275,7 +275,7 @@ main {
         margin-block: 110px 100px;
         margin-inline: auto;
         padding: 250px 60px 0;
-        width: 1280px;
+        /* width: 1280px; */
         background-size: 80%;
         bottom: 70px;
     }
@@ -310,7 +310,7 @@ main {
             margin-block: 100px 50px;
             margin-inline: auto;
             padding: 100px 20px 0;
-            width: 1280px;
+            /* width: 1280px; */
             background-size: 90%;
             font-size: 0.75em;
             bottom: 0;
