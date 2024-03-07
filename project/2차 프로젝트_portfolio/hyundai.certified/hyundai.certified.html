@@ -1,0 +1,537 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>hyundai.certified</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap">
+
+    <!-- Reset CSS and Custom Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <!-- Swiper CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://certified-static.hyundai.com/publish/HMC/p/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96"
+        href="https://certified-static.hyundai.com/publish/HMC/p/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://certified-static.hyundai.com/publish/HMC/p/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://certified-static.hyundai.com/publish/HMC/p/img/favicon-16x16.png">
+
+    <!-- Your Custom JavaScript -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="go_top_btn">
+            <a href="">
+                <i class="fa-regular fa-chevron-up"></i>
+                <p>TOP</p>
+            </a>
+        </div>
+        <div id="top">
+            <div class="main_stop_img">
+                <video id="main_video" src="images/main_video.mp4" muted autoplay playsinline="playsinline"
+                    poster="poster image" src="path"></video>
+                <!-- <img class="bg" src="images/main_slider.png" alt=""> -->
+                <div class="text_container">
+                    <div class="text_box">
+                        <span>당신의 현명한 중고차 라이프</span>
+                        <h2>Hyundai<br>intelligence<br>LAB</h2>
+                        <div class="btn">
+                            <a href="">Hi-LAB 바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="inner">
+                <a href="" class="logo"><img src="images/logo_new.png" alt=""></a>
+                <div id="pc_gnb">
+                    <ul>
+                        <li class="buy_my_car">
+                            <a href="">내차사기</a>
+                            <div class="brand_view">
+                                <div class="space">
+                                    <a href="">현대 브랜드관</a>
+                                    <a href="">제네시스 브랜드관</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">내차팔기</a>
+                        </li>
+                        <li class="hi_lab">
+                            <a href="">
+                                <p>Hi-LAB</p>
+                                <i class="fa-regular fa-chevron-down"></i>
+                                <div class="brand_view">
+                                    <div class="space">
+                                        <a href="">트렌드통계</a>
+                                        <a href="">시세</a>
+                                        <a href="">통합이력조회</a>
+                                        <a href="">거래TIP</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">기획전</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="icon">
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/icon_ui_search02.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/heart.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/icon_ui_cart02.svg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/icon_ui_mypage02.svg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="" id="tab">
+                    tab
+                </a>
+                <div id="mobile_gnb">
+                    <ul>
+                        <li class="buy_my_car">
+
+                            <a href="">
+                                <p>내차사기</p>
+                                <i class="fa-regular fa-chevron-down"></i>
+                            </a>
+                            <div class="brand_view">
+                                <a href="">현대 브랜드관</a>
+                                <a href="">제네시스 브랜드관</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>내차팔기</p>
+                            </a>
+                        </li>
+                        <li class="hi_lab">
+                            <a href="">
+                                <p>Hi-LAB</p>
+                                <i class="fa-regular fa-chevron-down"></i>
+                                <div class="brand_view">
+                                    <div class="space">
+                                        <a href="">트렌드통계</a>
+                                        <a href="">시세</a>
+                                        <a href="">통합이력조회</a>
+                                        <a href="">거래TIP</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <p>기획전</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div id="page1">
+            <div class="text_box">
+                <h2>Comming Soon</h2>
+                <p>
+                    <span>35대</span>
+                    차량을 미리 보고 입고알림 신청하세요.
+                </p>
+            </div>
+            <div class="container">
+                <div id="sub_slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide1.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>아반떼(AD)</h2>
+                                    <p>판매 예정인 차량<span>
+                                            7대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">KONA</li>
+                                        <li class="next">AVANTE(CN7)</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide2.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>아반떼(CN7)</h2>
+                                    <p>판매 예정인 차량<span>
+                                            5대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">AVANTE(AD)</li>
+                                        <li class="next">VENUE</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide3.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>베뉴</h2>
+                                    <p>판매 예정인 차량<span>
+                                            7대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">AVANTE(CN7)</li>
+                                        <li class="next">SONATA(LF)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide4.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>쏘나타(LF)</h2>
+                                    <p>판매 예정인 차량<span>
+                                            1대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">VENUE</li>
+                                        <li class="next">GRANDEUR(GN7)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide5.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>그랜져(GN7)</h2>
+                                    <p>판매 예정인 차량<span>
+                                            5대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">SONATA(LF)</li>
+                                        <li class="next">STARIA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide6.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>스타리아</h2>
+                                    <p>판매 예정인 차량<span>
+                                            3대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">GRANDEUR(GN7)</li>
+                                        <li class="next">KONA</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="" class="grd_bg"><img src="images/sub_slide7.jpg" alt=""></a>
+                                <div class="car_name">
+                                    <h2>코나</h2>
+                                    <p>판매 예정인 차량<span>
+                                            7대</span></p>
+                                </div>
+                                <div class="stocked">
+                                    <p>※ 예시 이미지 입니다.</p>
+                                    <a href="">입고알림 신청하기</a>
+                                </div>
+                                <div class="Sequence_car">
+                                    <ul>
+                                        <li class="prev">STARIA</li>
+                                        <li class="next">AVANTE(AD)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="page2">
+            <div class="container">
+                <div class="text_box">
+                    <p>현대/제네시스 인증중고차</p>
+                    <h2>내차사기 서비스<br>
+                        무엇이 필요할까요?</h2>
+                </div>
+                <div class="service">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <span>점검&인증서비스<i></i>
+                                </span>
+                                <p>꼼꼼한 점검부터<br>구매 후도 보장하는 인증서비스</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>디지털 혜택</span>
+                                <p>현대/제네시스 신차 혜택 그대로</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>결제 방식</span>
+                                <p>캐피탈 및 제휴카드, 복합 결제가<br>가능한 스마트 결제방식</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>오감만족</span>
+                                <p>차량 외장부터 실내 공기질까지<br>오감으로 느끼는 생생한 경험</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="page3">
+            <div class="container">
+                <div class="text_box">
+                    <h2>자주 묻는 질문</h2>
+                    <p>차량 판매/구매하기</p>
+                </div>
+                <div class="deal_car">
+                    <div class="column_line"></div>
+                    <div class="list_left">
+                        <a href="" class="circle"><img src="images/buy_car.svg" alt=""></a>
+                        <div class="side_text">
+                            <h3>내차사기</h3>
+                            <p>외국인, 법인도 한도조회<br>서비스 이용이 가능한가요?</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="list_right">
+                            <a href="" class="circle ef_right"><img src="images/sell_car.svg" alt="" class="sell"></a>
+                            <div class="side_text">
+                                <h3>내차팔기</h3>
+                                <p>리스 차량도 판매가<br>가능한가요?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_left">
+                        <a href="" class="circle"><img src="images/buy_car.svg" alt=""></a>
+                        <div class="side_text">
+                            <h3>내차사기</h3>
+                            <p>리스나 렌트는 이용이<br>불가한가요?</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="list_right">
+                            <a href="" class="circle ef_right"><img src="images/sell_car.svg" alt="" class="sell"></a>
+                            <div class="side_text">
+                                <h3>내차팔기</h3>
+                                <p>내차 가격은 어떻게<br>산정되나요?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="list_left">
+                        <a href="" class="circle"><img src="images/buy_car.svg" alt=""></a>
+                        <div class="side_text">
+                            <h3>내차사기</h3>
+                            <p>이용중인 금융상품을<br>취소하고싶습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <a href="">질문 더보기</a>
+                </div>
+            </div>
+        </div>
+        <div id="page4">
+            <div class="banner">
+                <div class="inner">
+                    <a href="">
+                        <img src="images/event_banner.jpg" alt="">
+                        <div class="text_box">
+                            <h2>이벤트/기획전</h2>
+                            <p>진행중인 이벤트/기획전을 확인해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container">
+
+                <div class="contents">
+                    <ul>
+                        <li>
+                            <a href=""><img src="images/page4_mobile_money.jpg" alt=""></a>
+                            <div class="desc">
+                                <p>기획전</p>
+                                <h3>단 3일, 계약하고 주유상품권 받자!</h3>
+                                <span>2024.01.29 - 2024.01.31</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/pagr4_card.jpg" alt=""></a>
+                            <div class="desc">
+                                <p>기획전</p>
+                                <h3>1.2% 캐시백, 2~3개월 무이자 혜택받고 구매하기</h3>
+                                <span>2024.12.15 - 2024.02.29</span>
+                            </div>
+                        </li>
+                        <li>
+                            <a href=""><img src="images/page4_present.jpg" alt=""></a>
+                            <div class="desc">
+                                <p>기획전</p>
+                                <h3>구매 확정하고, 선물 받자!</h3>
+                                <span>2023.11.28 - 2024.03.31</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="more">
+                        <a href="">더보기<i class="fa-regular fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sponsor">
+            <div class="inner">
+                <ul>
+                    <li>
+                        <a href=""><img src="images/hyundai_logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/KIA logo.svg" alt="" style="fill:black;"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/mobis_logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/hyundai_card_logo.svg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/kefico_logo.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/autoever-logo.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="counseling">
+            <div class="bg"><img src="images/counseling_bg.jpg" alt=""></div>
+            <div class="container">
+                <div class="text_box">
+                    <h2>구매 상담 신청</h2>
+                    <p>현대자동차 차량 구매 정보를<br>신속하고 정확하게 알려드립니다.</p>
+                </div>
+                <div id="form_container">
+                    <form action="">
+                        <div class="input_area"><!-- display flex / gap 30px -->
+                            <div class="input"><!-- width calc((100% - 30px)/2)-->
+                                <input type="name" placeholder="성함" class="name"><!-- 100% -->
+                                <input type="tel" placeholder="휴대폰번호 입력" class="sellphone" maxlength="13">
+                                <input type="email" placeholder="e-mail" class="e-mail">
+                            </div>
+                            <textarea class="message"
+                                placeholder="문의하고싶은 사항을 적어주세요. 예) 상담일자, 예산 ,출고일"></textarea><!-- width calc((100% - 30px)/2)-->
+                        </div>
+                        <div class="button">
+                            <button type="submit">구매상담 신청</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="inner">
+                <div class="left"><img src="images/logo_footer_blue.png" alt="logo"></div>
+                <div class="center">
+                    <div class="etc_info">
+                        <ul>
+                            <li>주소: 서울시 서초구 헌릉로 12</li>
+                            <li>인증중고차 컨택센터 : 1522-0880</li>
+                            <li>사업자등록번호: 101-81-09147</li>
+                        </ul>
+                    </div>
+                    <div class="copy">Copyright © Hyundai Motor Company. All Rights Reserved.</div>
+                </div>
+                <div class="right">
+                    <div class="foot_cs">
+                        <a href="">
+                            <img src="images/cs.png" alt="">
+                            <p>인증중고차<br>컨택센터</p>
+                        </a>
+                        <a href="">
+                            <img src="images/notice.png" alt="">
+                            <p>공지사항</p>
+                        </a>
+                        <a href="">
+                            <img src="images/call.png" alt="">
+                            <p>법인안내</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="dim"></div>
+    </div>
+</body>
+</div>
+
+</html>

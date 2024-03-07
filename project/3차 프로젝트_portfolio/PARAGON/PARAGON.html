@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>파라곤: 디 오버프라임 - 넷마블</title>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://sgimage.netmarble.com/favicon/overprime/paragon_favicon_192.ico">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://sgimage.netmarble.com/favicon/overprime/paragon_favicon_180.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap">
+
+    <!-- Reset CSS and Custom Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/img/favicon.ico">
+
+    <!-- Swiper CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Your Custom JavaScript -->
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="inner">
+                <div class="hd_logo">
+                    <a href=""><img src="images/header_logo.png" alt=""></a>
+                </div>
+                <div id="tab">
+                    <a href=""><img src="images/header_tab.png" alt=""></a>
+                </div>
+
+            </div>
+        </header>
+        <div id="dim"></div>
+        <div class="menu">
+            <!-- <div class="inner"> -->
+            <img src="images/tab_logo (2).png" alt="tab_logo">
+            <a href="" class="close"><i class="fa-sharp fa-light fa-xmark" style="color: #222222;"></i></a>
+            <ul>
+                <li>게임 정보</li>
+                <li>
+                    <a href="">
+                        <p>소식</p>
+                        <i class="fa-sharp fa-solid fa-angle-down" style="color: #222;"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="">전체</a></li>
+                        <li><a href="">점검</a></li>
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">업데이트</a></li>
+                        <li><a href="">이벤트</a></li>
+                        <li><a href="">개발자 노트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>영웅</p>
+                        <i class="fa-sharp fa-solid fa-angle-down" style="color: #222;"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="">전체</a></li>
+                        <li><a href="">전사</a></li>
+                        <li><a href="">서포터</a></li>
+                        <li><a href="">원거리딜러</a></li>
+                        <li><a href="">마법사</a></li>
+                        <li><a href="">탱커</a></li>
+                        <li><a href="">암살자</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>미디어</p>
+                        <i class="fa-sharp fa-solid fa-angle-down" style="color: #222;"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="">전체</a></li>
+                        <li><a href="">영상</a></li>
+                        <li><a href="">아트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>커뮤니티</p>
+                        <i class="fa-sharp fa-solid fa-angle-down" style="color: #222;"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="">Discord</a></li>
+                        <li><a href="">You Tube</a></li>
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Twitch</a></li>
+                        <li><a href="">개발자 노트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">
+                        <p>고객지원</p>
+                        <i class="fa-sharp fa-solid fa-angle-down" style="color: #222;"></i>
+                    </a>
+                    <ul class="dropdown">
+                        <li><a href="">권장사양</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!-- </div> -->
+        </div>
+        <main>
+            <div class="grd_bg"></div>
+            <div class="inner">
+                <div class="main_logo"><img src="images/main_logo.png" alt=""></div>
+                <div class="textbox">
+                    <div class="title">
+                        <h1>TPS Action MOBA<br>OVERPRIME</h1>
+                        <p>지금 무료로 플레이하세요!</p>
+                    </div>
+                    <div class="about_playing">
+                        <div class="play_now">
+                            <a href="">
+                                <img src="images/play_now_m.png" alt="">
+                                <span>
+                                    <p>지금 플레이하기</p>
+                                </span>
+                                <i class="fa-sharp fa-light fa-arrow-right-long" style="color: #ffffff;"></i>
+                            </a>
+                        </div>
+                        <div class="watching_video">
+                            <a href="">
+                                <img src="images/watching_video_m.png" alt="">
+                                <p>영상 보기</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <section>
+            <div id="page1">
+                <div class="band">
+                    <!-- <div class="play_station"><img src="images/playstation.png" alt=""></div> -->
+                    <a href="">
+                        <div class="inner">
+                            <h3>위시리스트 추가하고<br>제일 먼저 소식 받기</h3>
+                            <div class="Shortcut">
+                                <p>바로가기</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="page2">
+                <div class="inner">
+                    <div class="title">
+                        <a href="">
+                            <span>최신 영상</span>
+                            <i class="fa-sharp fa-regular fa-plus" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    <div class="video_container">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="images/video_1.jpg" alt="">
+                                    <div class="character_info">
+                                        <p>여왕의 기사</p>
+                                        <h3>테라</h3>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/video_2.jpg" alt="">
+                                    <div class="character_info">
+                                        <p>맹렬한 힘의 물결</p>
+                                        <h3>보리스</h3>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="page3">
+                <!-- bg :: css processing -->
+                <div class="inner">
+                    <div class="title">
+                        <h2>인기 영웅 TOP 10</h2>
+                        <span>
+                            배틀에서 승리하기 위해 당신의 역할과 맞는 영웅을 찾아보세요.
+                            <br>
+                            영웅 정보를 확인하고 게임에서 승리를 이끌어보세요!
+                        </span>
+                    </div>
+                    <div class="hero">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <img src="images/TERRA_TANKER.png" alt="">
+                                </a>
+                                <div class="textbox">
+                                    <mark class="new">NEW</mark>
+                                    <span>#여왕 #기사</span>
+                                    <h3>테라</h3>
+                                    <p>탱커</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/BORIS_TANKER.png" alt="">
+                                </a>
+                                <div class="textbox">
+                                    <mark class="new">NEW</mark>
+                                    <span>#맹렬함 #힘의물결</span>
+                                    <h3>보리스</h3>
+                                    <p>탱커</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/MATIE_MAGITION.jpg" alt="">
+                                </a>
+                                <div class="textbox">
+                                    <mark>HOT</mark>
+                                    <span>#어둠 #매지션</span>
+                                    <h3>마티</h3>
+                                    <p>마법사</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="images/IN_AD.jpg" alt="">
+                                </a>
+                                <div class="textbox">
+                                    <mark>HOT</mark>
+                                    <span>#곡예사 #민첩</span>
+                                    <h3>인</h3>
+                                    <p>원거리 딜러</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <a href="">
+                            <p>더보기</p>
+                            <i class="fa-light fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="page4">
+                <div class="inner">
+                    <div class="pg4_logo"><img src="images/main_logo.png" alt=""></div>
+                    <div class="textbox">
+                        <p>지금 접속하고<br><span>인기 영웅 10종을 무료로 받아보세요!</span></p>
+                        <p class="free">무료 혜택 받고 플레이하기</p>
+                    </div>
+                    <div class="play_now">
+                        <a href="">
+                            <img src="images/play_now_m.png" alt="">
+                            <span>
+                                <p>지금 플레이하기</p>
+                            </span>
+                            <i class="fa-sharp fa-light fa-arrow-right-long" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="page5">
+                <div class="inner">
+                    <div class="title">
+                        <a href="">
+                            <span>공지사항</span>
+                            <i class="fa-sharp fa-regular fa-plus" style="color: #ffffff;"></i>
+                        </a>
+                    </div>
+                    <div class="notice">
+                        <ul>
+                            <li>
+                                <a href="">
+                                    <span>비매너 플레이어 제재 안내 (2월)</span>
+                                    <p>2024. 02. 06</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>1월 개발자 노트</span>
+                                    <p>2024. 01. 30</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>1/25 확인된 현상 안내 (Updated: 1/26)</span>
+                                    <p>2024. 01. 26</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <span>1/25 확인된 현상안내</span>
+                                    <p>2024. 01. 25</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="page6">
+                <div class="inner">
+                    <div class="dev">
+                        <span>개발자와 직접 소통해요</span>
+                        <a href=""><img src="images/discord.png" alt=""></a>
+                    </div>
+                    <div class="community">
+                        <p>커뮤니티</p>
+                        <ul>
+                            <li><a href=""><img src="images/facebook.png" alt=""></a></li>
+                            <li><a href=""><img src="images/twiter.png" alt=""></a></li>
+                            <li><a href=""><img src="images/youtube.png" alt=""></a></li>
+                            <li><a href=""><img src="images/twich.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="inner">
+                <div class="company">
+                    <a href="">
+                        <img src="images/netmarble_ci.png" alt="ci">
+                        <img src="images/netmarble_f&c_ci.png" alt="f&c">
+                    </a>
+                </div>
+                <div class="desc">
+                    <div class="use">
+                        <a href="">
+                            <p>이용약관</p>
+                        </a>
+                        <a href="">
+                            <p>개인정보처리방침</p>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <p>© Netmarble Corp. & Netmarble F&C Inc. All Rights Reserved
+                            <!-- <br> -->
+                            “PlayStation Family Mark” and “PlayStation” are registered
+                            <!-- <br> -->
+                            trademarks or trademarks of Sony Interactive Entertainment Inc.
+                        </p>
+                    </div>
+                </div>
+                <div class="game_info">
+                    <img src="images/game_info.png" alt="">
+                </div>
+                <div class="language">
+                    <a href="">
+                        <p>한국어</p>
+                        <img src="images/arrow_up.png" alt="">
+                    </a>
+                    <ul>
+                        <li><a href="">English</a></li>
+                        <li><a href="">한국어</a></li>
+                        <li><a href="">日本語</a></li>
+                        <li><a href="">中文(简体)</a></li>
+                        <li><a href="">Français</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

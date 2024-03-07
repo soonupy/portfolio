@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>권순우 | 웹 포트폴리오</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css">
+
+    <!-- Reset CSS and Custom Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/image/favicon_io/favicon.ico">
+
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+    <!-- GSAP / scrollTrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+
+    <!-- Swiper CSS and JavaScript -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Your Custom JavaScript -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="dim"></div>
+        <header>
+            <div class="inner">
+                <a href="index.html">
+                    <div class="dev">
+                        <h2 href="">FRONT-END<br>WEB PORTFOLIO</h2>
+                    </div>
+                </a>
+                <div class="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">About</a>
+                        </li>
+                        <li>
+                            <a href="viewwork.html">Work</a>
+                        </li>
+                        <li>
+                            <a href="preview.html">Preview</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="tab">
+                <a href="">
+                    <i class="fa-sharp fa-light fa-bars" style="color: #ffffff;"></i>
+                    <i class="fa-sharp fa-regular fa-xmark"></i>
+                </a>
+            </div>
+            <div class="tab_nav">
+                <ul>
+                    <li>
+                        <a href="index.html" class="about">About</a>
+                    </li>
+                    <li>
+                        <a href="viewwork.html" class="skills">Work</a>
+                    </li>
+                    <li>
+                        <a href="preview.html" class="work">Preview</a>
+                    </li>
+                </ul>
+            </div>
+
+        </header>
+        <main>
+            <div id="intro">
+                <div class="title">
+                    <h1>
+                        <span id="typed"></span>
+                    </h1>
+                </div>
+            </div>
+        </main>
+        <section id="overview">
+            <div class="inner">
+                <div class="title">
+                    <h2>OVERVIEW</h2>
+                    <p>Introduce</p>
+                </div>
+                <div class="desc">
+                    <p>안녕하세요. 프론트엔드
+                        <span>개발자 권순우</span>입니다.
+                    </p>
+                    <p>현재까지 일하며 경험해왔던
+                        <span>디자인 경험</span>을 살려<br>
+                        팀원들과의
+                        <span>원활한 협업</span>을 바탕으로
+                    </p>
+                    <p>
+                        <span>탄탄한 마크업</span>
+                        및
+                        <span>효율적인 코드의 CSS</span>,<br>
+                        <span>시선을 이끄는 동적인 JavaScript</span>를 추구하며,
+                    </p>
+                    <p>다양한
+                        <span>프레임워크와 라이브러리</span>를 배우고
+                        <br>성장하는 도전적인 개발자가 되겠습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="profile_license">
+            <div class="title">
+                <h2>PROFILE</h2>
+                <p>information</p>
+            </div>
+            <div class="top">
+                <aside>
+                    <img src="image/profile.png" alt="">
+                </aside>
+                <article>
+                    <figure>
+                        <h3>PROFILE</h3>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <b>권순우</b>
+                                    <p>Name</p>
+                                </li>
+                                <li>
+                                    <b>010-7115-3498</b>
+                                    <p>Phone</p>
+                                </li>
+                                <li>
+                                    <b>soonupy97@naver.com</b>
+                                    <p>E - mail</p>
+                                </li>
+                                <li>
+                                    <b>경기도 군포시 당정동</b>
+                                    <p>Adress</p>
+                                </li>
+                                <li>
+                                    <b>github.com/soonupy</b>
+                                    <p>Github Adress</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                    <figure>
+                        <h3>LICENSE</h3>
+                        <div class="desc">
+                            <ul>
+                                <li>
+                                    <b>컴퓨터그래픽스운용기능사</b>
+                                    <p>한국산업인력공단</p>
+                                </li>
+                                <li>
+                                    <b>GTQ 포토샵 1급</b>
+                                    <p>한국생산성본부</p>
+                                </li>
+                                <li>
+                                    <b>GTQ 일러스트 1급</b>
+                                    <p>한국생산성본부</p>
+                                </li>
+                                <li>
+                                    <b>컴퓨터활용능력 2급</b>
+                                    <p>대한상공회의소</p>
+                                </li>
+                                <li>
+                                    <b>ITQ MASTER</b>
+                                    <p>한국생산성본부</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </figure>
+                </article>
+
+            </div>
+            <div class="bottom">
+                <h3>
+                    CAREER &<br>EDUCATIONS
+                </h3>
+                <div class="content">
+                    <div class="upper">
+                        <ul>
+                            <li>
+                                <p>2013.03 - 2016.02</p>
+                                <b>산업디자인과 졸업</b>
+                                <span>평촌과학기술고등학교</span>
+                            </li>
+                            <li>
+                                <p>2016.03 - 2020.02</p>
+                                <b>한류예술과 졸업</b>
+                                <span>백제예술대학교</span>
+                            </li>
+                            <li>
+                                <p>2019.12 - 2021.02</p>
+                                <b>그래픽디자인 강사</b>
+                                <span>하나컴퓨터학원</span>
+                            </li>
+                            <li>
+                                <p>2021.03 - 2022.07</p>
+                                <b>컨텐츠 디자이너</b>
+                                <span>주식회사 구랩</span>
+                            </li>
+                            <li>
+                                <p>2022.10 - 2023.10</p>
+                                <b>편집 디자이너</b>
+                                <span>주식회사 삼안</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="skills">
+            <div class="inner">
+                <div class="title">
+                    <h2>SKILLS</h2>
+                    <p>abillity utilize</p>
+                </div>
+                <div class="tools">
+                    <ul>
+                        <li>
+                            <div class="kind">
+                                <span>UI/UX</span>
+                                <ul>
+                                    <li><img src="image/photoshop.png" alt=""></li>
+                                    <li><img src="image/ai.png" alt=""></li>
+                                    <li><img src="image/figma.png" alt=""></li>
+                                    <li><img src="image/html.png" alt=""></li>
+                                    <li><img src="image/css.png" alt=""></li>
+                                    <li><img src="image/scss.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <p>웹 표준을 준수한 HTML을 작성하고 CSS를 통해 모바일 디바이스를 고려한 반응형 스타일을 구현할 수 있습니다.
+                            </p>
+                        </li>
+                        <li>
+                            <div class="kind">
+                                <span>Front</span>
+                                <ul>
+                                    <li><img src="image/javaScript.png" alt=""></li>
+                                    <li><img src="image/jQuery.png" alt=""></li>
+                                    <li><img src="image/swiper.png" alt=""></li>
+                                    <li><img src="image/gsap.png" alt=""></li>
+                                    <li><img src="image/react.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <p>JavaScript를 통해 다채로운 인터렉션을 다양한 라이브러리를 활용하여 웹을 구현할 수 있습니다.</p>
+                        </li>
+                        <li>
+                            <div class="kind">
+                                <span>Back</span>
+                                <ul>
+                                    <li><img src="image/nodeExpress.png" alt=""></li>
+                                    <li><img src="image/nodeJS.png" alt=""></li>
+                                    <li><img src="image/mongoDB.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <p>웹 서버, API개발, 데이터베이스 통신 등 다양한 서버 측 작업을 협업할 수 있습니다.</p>
+
+                        </li>
+                        <li>
+                            <div class="kind">
+                                <span>SCM</span>
+                                <ul>
+                                    <li><img src="image/git.png" alt=""></li>
+                                    <li><img src="image/github.png" alt=""></li>
+                                </ul>
+                            </div>
+                            <p>Git과 GitHub를 사용하여 코드를 효율적으로 관리하고, 협업, 코드 리뷰, 이슈 트래킹, 버전 관리 등의 다양한 작업을 수행할 수
+                                있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="viewwork">
+            <a href="viewwork.html" class="btn">
+                VIEW WORK
+            </a>
+        </section>
+        <footer>
+            <div class="inner">
+                <p>©2024 SOONUPY.<br>All Right Reserved</p>
+                <span>Do you like my Portfolio?&nbsp;&nbsp;<a href="mailto:soonupy97@naver.com">Send E-mail</a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    <div id="page-transition-cover" style="display: none;"></div>
+
+</body>
+
+</html>
