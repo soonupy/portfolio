@@ -269,7 +269,7 @@ header {
 }
 main {
     position: relative;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     #intro {
         margin-block: 110px 100px;
