@@ -273,7 +273,7 @@ main {
     display: flex;
     #intro {
         margin-block: 110px 100px;
-        margin-inline: auto;
+        margin-inline: 0 auto;
         padding: 250px 60px 0;
         /* width: 1280px; */
         background-size: 80%;
@@ -308,7 +308,7 @@ main {
             top: 0;
 
             margin-block: 100px 50px;
-            margin-inline: auto;
+            margin-inline: 0 auto;
             padding: 100px 20px 0;
             /* width: 1280px; */
             background-size: 90%;
@@ -318,7 +318,7 @@ main {
         .title h1 {
         display: block;
         color: #fff;
-        font-size: 2em;
+        font-size: 1.75em;
         font-family: pretendard;
         bottom: 0;
 
