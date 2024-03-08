@@ -21,11 +21,11 @@ $(function () {
         .type("<strong>DEVELOPER</strong>")
         .break(2, { delay: 500 })
         .break()
-        .type("WEB PORTFOLIO&nbsp")
+        .type("WEB PORTFOLIO")
         .pause(1000)
         .delete()
         .type("<strong>처음<br>뵙겠습니다.</strong>", { delay: 300 })
-        .type("<br>전,<br>권순우입니다.")
+        .type(" <br>전,<br>권순우입니다.")
         .go();
 
     // GSAP 스크롤트리거

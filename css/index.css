@@ -269,19 +269,21 @@ header {
 }
 main {
     position: relative;
-    height: 100dvh;
     display: flex;
+    margin: 0 auto;
+    padding-inline: 60px;
+    max-width: 1280px;
     #intro {
         margin-block: 110px 100px;
         margin-inline: 0 auto;
-        padding: 250px 60px 0;
-        /* width: 1280px; */
+        padding: 250px 0 0 0;
         background-size: 80%;
         bottom: 70px;
     }
     .title {
         left: 0;
         bottom: 0;
+        height: 337px;
     }
     .title h1 {
         display: block;
@@ -303,15 +305,14 @@ main {
 @media all and (max-width:767px) {
     main {
         height: 100%;
+        padding-inline: 20px;
         #intro {
             position: relative;
-            /* position: absolute; */
             top: 0;
             height: 172px;
             margin-block: 200px 50px;
             margin-inline: 0 auto;
-            padding: 0px 20px 0;
-            /* width: 1280px; */
+            padding: 0 0;
             background-size: 90%;
             font-size: 0.75em;
             bottom: 0;
@@ -432,7 +433,6 @@ main {
             text-align: left;
             width: calc((100%)/2);
             justify-content: start;
-            /* opacity: 0; */
 
             h3 {
                 font-size: 1.25em;
@@ -597,9 +597,7 @@ main {
             bottom: -40px;
             transform: translate(-50%, 55%);
             opacity: 0;
-            /* 초기 상태는 투명 */
             animation: growHeight 0.5s ease 1s;
-            /* 1초 후에 나타나도록 설정 */
         }
 
         .content .upper ul li::after {
@@ -612,16 +610,13 @@ main {
             background-image: linear-gradient(to bottom, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
             background-size: 1px 4px;
             animation: growHeight 0.5s ease 1.5s forwards;
-            /* 1.5초 후에 높이가 증가하며 동시에 나타나도록 설정 */
         }
         .content .line {
             content: "";
             width: 0;
-            /* 변경된 부분 */
             height: 2px;
             background-color: #fff;
             animation: grow 1s forwards;
-            /* 애니메이션 적용 */
         }
     }
 }
@@ -637,15 +632,11 @@ main {
 @keyframes desc_slideIn {
     from {
         transform: translateX(-25%);
-        /* 시작 위치를 요소의 왼쪽으로 설정 */
         opacity: 0;
-        /* 시작 투명도를 0으로 설정하여 요소가 보이지 않게 함 */
     }
     to {
         transform: translateX(0);
-        /* 최종 위치를 원래 위치로 설정 */
         opacity: 1;
-        /* 최종 투명도를 1로 설정하여 요소가 완전히 보이게 함 */
     }
 }
 /* career */
@@ -672,8 +663,6 @@ main {
     }
     to {
         height: 120px;
-        /* 원하는 최종 높이 */
-        /* transform: translateY(100%); */
     }
 }
 @keyframes slideInFromLeft {
@@ -729,16 +718,6 @@ main {
                         bottom: -10px;
                         transform: translate(-50%,55%);
                     }
-                    /* &::after {
-                        position: absolute;
-                        content: "";
-                        width: 50%;
-                        height: 1px;
-                        bottom: -10px;
-                        transform: translate(0%,35%);
-                        background-image: linear-gradient(to right,#fff 50%,transparent 50%);
-                        background-size: 4px 1px;
-                    } */
                 }
             }
             .content .line {
@@ -804,9 +783,7 @@ main {
                 bottom: -10px;
                 transform: translate(-50%,55%);
                 opacity: 0;
-                /* 초기 상태는 투명 */
                 animation: fadeIn 0.5s ease 1s;
-                /* 1초 후에 나타나도록 설정 */
             }
             .content .upper ul li::after {
                 position: absolute;
@@ -818,7 +795,6 @@ main {
                 background-image: linear-gradient(to right,#fff 50%,transparent 50%);
                 background-size: 4px 1px;
                 animation: growWidth 0.5s ease 1.5s forwards;
-                /* 1.5초 후에 높이가 증가하며 동시에 나타나도록 설정 */
             }
         }
     }
@@ -845,14 +821,11 @@ main {
         }
         to {
             height: 565px;
-            /* 원하는 최종 높이 */
-            /* transform: translateY(100%); */
         }
     }
 }
 @media all and (max-width:767px) {
     #overview {
-        /* margin-top: 512px; */
         margin-bottom: 50px;
         font-size: 0.875em;
         .desc {
@@ -941,8 +914,6 @@ main {
         }
         to {
             height: 515px;
-            /* 원하는 최종 높이 */
-            /* transform: translateY(100%); */
         }
     }
 }
@@ -1045,9 +1016,6 @@ main {
         object-fit: contain;
     }
 }
-/* .fadeInAni {
-    animation: fadeIn 2s 0s forwards;
-} */
 @keyframes tool_fadeIn {
     from {
         opacity: 0;
@@ -1059,29 +1027,21 @@ main {
 @keyframes tool_slideIn {
     from {
         transform: translateX(-5%);
-        /* 시작 위치를 요소의 왼쪽으로 설정 */
         opacity: 0;
-        /* 시작 투명도를 0으로 설정하여 요소가 보이지 않게 함 */
     }
     to {
         transform: translateX(0);
-        /* 최종 위치를 원래 위치로 설정 */
         opacity: 1;
-        /* 최종 투명도를 1로 설정하여 요소가 완전히 보이게 함 */
     }
 }
 @keyframes tool_slideDown {
     from {
         transform: translateY(-50%);
-        /* 시작 위치를 요소의 왼쪽으로 설정 */
         opacity: 0;
-        /* 시작 투명도를 0으로 설정하여 요소가 보이지 않게 함 */
     }
     to {
         transform: translateY(0);
-        /* 최종 위치를 원래 위치로 설정 */
         opacity: 1;
-        /* 최종 투명도를 1로 설정하여 요소가 완전히 보이게 함 */
     }
 }
 @media all and (max-width:1024px) {
@@ -1233,4 +1193,12 @@ footer {
 }
 @viewport {
 	width: device-width;
+}
+.ti-cursor{
+    font-size: 1em !important;
+}
+@media all and (max-width:767px) {
+    .ti-cursor{
+    font-size: 1em !important;
+}
 }
