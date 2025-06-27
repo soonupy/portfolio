@@ -1,2 +1,8 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+# * text=auto
+
+# 분석에서 제외할 파일 확장자
+*.json linguist-detectable=false
+*.md linguist-detectable=false
+*.yml linguist-detectable=false
+*.lock linguist-detectable=false
