@@ -7,12 +7,16 @@ export const Navigation = () => {
     <section className={`navigation-section`}>
       <nav className="navigation-bar">
         <div className="nav-control">
-          <button className="nav-control-button up-btn">
-            <i className="icon ico-md"><ChevronUp /></i>
+          <button className="nav-control-btn">
+            {/* <i className="icon ico-md"><ChevronUp /></i> */}
           </button>
-          <button className="nav-control-button down-btn">
-            <i className="icon ico-md"><ChevronDown /></i>
+          <button className="nav-control-btn">
+            {/* <i className="icon ico-md"><ChevronUp /></i> */}
           </button>
+          <button className="nav-control-btn">
+            {/* <i className="icon ico-md"><ChevronUp /></i> */}
+          </button>
+
         </div>
         <ul className="nav-pages">
           <li className="nav-page-item">

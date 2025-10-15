@@ -115,6 +115,7 @@ const Particles: React.FC<ParticlesProps> = ({
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mouseRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 });
+  const targetMouseRef = useRef<{ x: number; y: number }>({ x: 0, y: 0 }); // 추가
 
   useEffect(() => {
     const container = containerRef.current;
@@ -141,11 +142,17 @@ const Particles: React.FC<ParticlesProps> = ({
       const rect = container.getBoundingClientRect();
       const x = ((e.clientX - rect.left) / rect.width) * 2 - 1;
       const y = -(((e.clientY - rect.top) / rect.height) * 2 - 1);
-      mouseRef.current = { x, y };
+      targetMouseRef.current = { x, y }; // mouseRef 대신 targetMouseRef 사용
+    };
+
+    // 마우스가 영역을 벗어날 때 중앙으로 돌아가기
+    const handleMouseLeave = () => {
+      targetMouseRef.current = { x: 0, y: 0 };
     };
 
     if (moveParticlesOnHover) {
       container.addEventListener('mousemove', handleMouseMove);
+      container.addEventListener('mouseleave', handleMouseLeave); // 추가
     }
 
     const count = particleCount;
@@ -204,6 +211,11 @@ const Particles: React.FC<ParticlesProps> = ({
       program.uniforms.uTime.value = elapsed * 0.001;
 
       if (moveParticlesOnHover) {
+        // lerp(선형 보간)를 사용해 부드럽게 이동
+        const lerpFactor = 0.05; // 0에 가까울수록 더 부드러워짐 (0.01~0.1 추천)
+        mouseRef.current.x += (targetMouseRef.current.x - mouseRef.current.x) * lerpFactor;
+        mouseRef.current.y += (targetMouseRef.current.y - mouseRef.current.y) * lerpFactor;
+        
         particles.position.x = -mouseRef.current.x * particleHoverFactor;
         particles.position.y = -mouseRef.current.y * particleHoverFactor;
       } else {
@@ -226,6 +238,7 @@ const Particles: React.FC<ParticlesProps> = ({
       window.removeEventListener('resize', resize);
       if (moveParticlesOnHover) {
         container.removeEventListener('mousemove', handleMouseMove);
+        container.removeEventListener('mouseleave', handleMouseLeave); // 추가
       }
       cancelAnimationFrame(animationFrameId);
       if (container.contains(gl.canvas)) {
