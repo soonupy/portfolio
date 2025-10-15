@@ -6,13 +6,9 @@ import Menu3Page from "./pages/Menu3Page";
 import Menu4Page from "./pages/Menu4Page";
 import "@styles/index.scss";
 
-
-
-
-
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <Layout>
         <Routes>
           <Route path="/menu1" element={<Menu1Page />} />

@@ -15,7 +15,8 @@ export const Introduce = () => {
           <div className="title-block">
             <strong className="title">안녕하세요.
               <br />
-              웹 퍼블리셔
+              {/* 웹 퍼블리셔 */}
+              웹 프론트엔드
               <br />
               <span className="name">권순우</span>입니다.
             </strong>
