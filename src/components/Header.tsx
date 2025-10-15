@@ -1,21 +1,10 @@
 import { Link } from 'react-router-dom'
 import { FaReact } from "react-icons/fa";
 import { ChevronDown } from 'lucide-react';
-import { useState } from 'react';
 import '../styles/index.scss';
 
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState([false, false, false, false]);
-
-    const toggleDropdown = (index: number) => {
-      const newIsOpen = [...isOpen];
-      newIsOpen[index] = !newIsOpen[index];
-      setIsOpen(newIsOpen);
-    };
-
-    
-
   return (
     <header className="header">
       <h1 className='header-logo'>
