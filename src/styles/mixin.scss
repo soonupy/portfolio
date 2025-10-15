@@ -1,0 +1,47 @@
+@mixin flex($direction: row, $align: center, $justify: center, $gap: null) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
+  gap: $gap;
+}
+
+@mixin layout($padding: null, $border-radius: null) {
+  padding: $padding;
+  border-radius: $border-radius;
+}
+
+@mixin font($size: null, $weight: null, $line-height: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line-height;
+  color: $color;
+}
+
+// 미디어 쿼리
+@mixin tablet {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin scrollbar {
+  overflow: auto;
+  padding-right: 6px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--select-color);
+    border-radius: 4px;
+  }
+}

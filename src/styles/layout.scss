@@ -1,0 +1,86 @@
+@use './mixin.scss' as *;
+
+.layout {
+    height: 100vh;
+    width: 100vw;
+    background-color: #efefef;
+    @include flex(column);
+  }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    // box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+
+    .header-logo{
+        @include flex(row, center, center, 0.5rem);
+
+        .logo-link{
+            @include flex(null ,center, center, 0.5rem);
+            color: #222;
+
+            .logo-icon{
+                min-height: 2rem;
+                min-width: 2rem;
+            }
+            .logo-text{
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+
+
+    }
+    
+
+    .header-nav{
+        @include flex(row, center, center, 0.5rem);
+
+        .menu{
+            position: relative;
+            @include flex(row, center, center, 0.5rem);
+            padding: 8px;
+            color: #666;
+            font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;        
+
+        ul{
+            position: absolute;
+            @include flex(column, center, center);
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 100%;
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem;
+                width: 100%;
+            }
+        }
+    }
+}
+}
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: #fff;
+
+    width: 100%;
+
+    p{
+        font-size: 14px;
+        color: #666;
+    }
+}
