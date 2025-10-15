@@ -1,7 +1,7 @@
 // src/Playground.tsx
 import { Introduce } from './sections/Introduce'
 import { Navigation } from './sections/Nav'
-import Particles from './effects/ParticlesBg';
+// import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
 import "./effects/effect.scss";
