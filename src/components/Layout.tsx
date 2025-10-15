@@ -5,7 +5,7 @@ import Particles from './effects/ParticlesBg'
 
 
 type LayoutProps = {
-  children: React.ReactNode
+  children?: React.ReactNode  // ← ? 추가해서 optional로!
 }
 
 const Layout = ({ children }: LayoutProps) => {
