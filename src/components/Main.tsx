@@ -1,6 +1,8 @@
 // src/Playground.tsx
 import { Introduce } from './sections/Introduce'
 import { Navigation } from './sections/Nav'
+import { Ability } from './sections/Ability'
+import { StackTool } from './sections/StackTool'
 // import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
@@ -15,8 +17,11 @@ const Main = ({ children }: MainProps) => {
   return (
     <main className="main">
       <Introduce />
+      {/* <Introduce /> */}
         
       <Navigation />
+      <Ability />
+      <StackTool />
       {children}
     </main>
   )

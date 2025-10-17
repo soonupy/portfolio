@@ -1,8 +1,9 @@
 @use './mixin.scss' as *;
 
 .layout {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    position: relative;
+    // width: 100vw;
     background-color: #efefef;
     @include flex(column);
   }
