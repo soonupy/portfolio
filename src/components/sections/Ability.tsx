@@ -1,5 +1,3 @@
-import {Fa0, Fa1, Fa2} from "react-icons/fa6";
-import {LuDownload} from "react-icons/lu";
 
 export const Ability = () => {
 
@@ -8,6 +6,7 @@ export const Ability = () => {
             <span className="sub-title">핵심 역량</span>
             <h4 className="title">유연하게 소통하고 견고하게 개발합니다.</h4>
             <div className="content">
+
                 <ul className="ability-list">
                     <li className="ability-item">
                         <figure>
