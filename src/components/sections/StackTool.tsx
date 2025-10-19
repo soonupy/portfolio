@@ -53,10 +53,10 @@ export const StackTool = () => {
             <h4 className="title">아래의 기술을 사용할 수 있습니다.</h4>
             <div className="list-bar tool-bar">
                 <ul className="list tool-list">
-                    <li>
+                    {/* <li>
                         <input type="radio" id="all" name="tool-category" value="all" />
                         <label htmlFor="all">all</label>
-                    </li>
+                    </li> */}
                     <li>
                         <input type="radio" id="frontend" name="tool-category" value="frontend" />
                         <label htmlFor="frontend">프론트엔드</label>
