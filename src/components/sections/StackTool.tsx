@@ -49,8 +49,10 @@ export const StackTool = () => {
 
     return (
         <section className="ability-section hero-section">
-            <span className="sub-title">기술 스택 및 도구</span>
-            <h4 className="title">아래의 기술을 사용할 수 있습니다.</h4>
+            <div className="title-block">
+                <span className="sub-title">기술 스택 및 도구</span>
+                <h4 className="title">아래의 기술을 사용할 수 있습니다.</h4>
+            </div>
             <div className="list-bar tool-bar">
                 <ul className="list tool-list">
                     {/* <li>

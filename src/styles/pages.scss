@@ -199,16 +199,20 @@
         align-items: center;
         width: 100%;
 
-        span {
-            color: $primary-color;
-        }
-        h4 {
-            color: #fff;
-            font-size: 1.5rem;
-            font-weight: bold;
+        .title-block {
             text-align: center;
-            word-break: keep-all;
+            span {
+                color: $primary-color;
+                width: 100%;
+            }
+            h4 {
+                color: #fff;
+                font-size: 1.5rem;
+                font-weight: bold;
+                word-break: keep-all;
+            }
         }
+
 
         .content {
 
