@@ -6,40 +6,42 @@ import { useEffect } from "react";
 
 export const Ability = () => {
     useEffect(() => {
-        AOS.init({ duration: 600, once: true });
+        AOS.init({ duration: 6000, once: true });
       }, []);
       
     return (
         <section className="ability-section hero-section">
-            <div className="title-block" data-aos="fade-up" data-aos-duration="1000">
-                <span className="sub-title">핵심 역량</span>
-                <h4 className="title">유연하게 소통하고 견고하게 개발합니다.</h4>
-            </div>
-            <div className="content">
-
-                <ul className="ability-list">
-                    <li className="ability-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
-                        <figure>
-                            <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
-                            <figcaption>모던 프론트엔드 개발</figcaption>
-                        </figure>
-                        <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
-                    </li>
-                    <li className="ability-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
-                        <figure>
-                            <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
-                            <figcaption>모던 프론트엔드 개발</figcaption>
-                        </figure>
-                        <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
-                    </li>
-                    <li className="ability-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
-                        <figure>
-                            <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
-                            <figcaption>모던 프론트엔드 개발</figcaption>
-                        </figure>
-                        <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
-                    </li>
-                </ul>
+            <div className="inner">
+                <div className="title-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
+                    <span className="sub-title">핵심 역량</span>
+                    <h4 className="title">유연하게 소통하고 견고하게 개발합니다.</h4>
+                </div>
+                <div className="content">
+    
+                    <ul className="ability-list">
+                        <li className="ability-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="200" >
+                            <figure>
+                                <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
+                                <figcaption>모던 프론트엔드 개발</figcaption>
+                            </figure>
+                            <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
+                        </li>
+                        <li className="ability-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600" data-aos-offset="200">
+                            <figure>
+                                <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
+                                <figcaption>모던 프론트엔드 개발</figcaption>
+                            </figure>
+                            <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
+                        </li>
+                        <li className="ability-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" data-aos-offset="200">
+                            <figure>
+                                <img src="https://picsum.photos/300/300" alt="HTML 아이콘"/>
+                                <figcaption>모던 프론트엔드 개발</figcaption>
+                            </figure>
+                            <p className="ability-item-title">React.js를 이용한 프론트엔드 개발경험이 있으며, Javascript(ES6), typescript에 능숙합니다. Next.js와 더불어 핵심적인 React library 활용 경험이 있습니다.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     );

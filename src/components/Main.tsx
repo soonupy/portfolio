@@ -16,10 +16,11 @@ type MainProps = {
 const Main = ({ children }: MainProps) => {
   return (
     <main className="main">
-      <Introduce />
+        <Introduce />
+        <Navigation />
       {/* <Introduce /> */}
         
-      <Navigation />
+
       <Ability />
       <StackTool />
       {children}
