@@ -3,6 +3,7 @@ import { Introduce } from './sections/Introduce'
 import { Navigation } from './sections/Nav'
 import { Ability } from './sections/Ability'
 import { StackTool } from './sections/StackTool'
+import { Career } from './sections/Career'
 // import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
@@ -18,11 +19,9 @@ const Main = ({ children }: MainProps) => {
     <main className="main">
         <Introduce />
         <Navigation />
-      {/* <Introduce /> */}
-        
-
       <Ability />
       <StackTool />
+      <Career />
       {children}
     </main>
   )
