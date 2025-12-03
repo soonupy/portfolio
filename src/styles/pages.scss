@@ -318,13 +318,22 @@
                     gap: 3rem;
                     .career-content {
                         display: flex;
+                        align-items: flex-start;
                         gap: 3rem;
 
                         .content-title {
                         display: flex;
-                            font-size: 1rem;
-                            font-weight: 600;
-                            color: #fff;
+                        align-items: center;
+                        gap: 0.5rem;
+                        height: 32px;
+font-size: 1rem;
+                            color: #b1b1b1;
+
+                            .current{
+                                color: $primary-color;
+                            }
+
+
                         }
                         .content-desc {
                             display: flex;
@@ -340,11 +349,18 @@
                                     font-size: 1.125rem;
                                     font-weight: 600;
                                     color: #fff;
+                                    small{
+                                        font-size: 0.75rem;
+                                        font-weight: 400;
+                                        color: #a9a9a950;
+                                        margin-left: 0.5rem;
+                                    }
                                 }
                                 span{
                                     font-size: 0.875rem;
                                     font-weight: 400;
                                     color: #a9a9a9;
+
                                 }
                             }
                             ul{
@@ -358,12 +374,15 @@
                                 display: flex;
                                 flex-direction: column;
                                 gap: 0.5rem;
-                                .detail-btn {
+
+                                button.detail-btn {
                                     display: flex;
                                     align-items: center;
                                     gap: 0.5rem;
                                     color: #fff;
+                                    width: fit-content;
                                     cursor: pointer;
+                                    color: $primary-color;
                                     
                                     .icon {
                                         transition: transform 0.3s ease;
@@ -375,13 +394,15 @@
                                     gap: 0.5rem;
                                     padding: 1rem;
                                     border-radius: 0.5rem;
-                                    background-color: #ffffff25;
+                                    background-color: rgba(#fff, .05);
                                     max-height: 0;
                                     overflow: hidden;
                                     opacity: 0;
                                     padding: 0 1rem;
                                     
                                     li{
+                                        color: #e1e1e1;
+
                                         &:before {
                                             content: "•";
                                             color: #fff;
