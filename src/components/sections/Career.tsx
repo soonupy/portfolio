@@ -86,7 +86,7 @@ export const Career = () => {
                                 <div className="content-desc">
                                     <p className="desc-title">
                                         <b>삼안 
-                                        <small>지원본부</small>
+                                        <small>지원본부123</small>
                                         </b>
                                     <span className="desc-detail">2025.01 - 2025.02</span>
                                     </p>
