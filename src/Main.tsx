@@ -5,6 +5,7 @@ import { Ability } from './sections/Ability'
 import { StackTool } from './sections/StackTool'
 import { Career } from './sections/Career'
 import { Project } from './sections/Project'
+import { EducationLicense } from './sections/EducationLicense'
 // import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
@@ -23,6 +24,7 @@ const Main = ({ children }: MainProps) => {
       <StackTool />
       <Career />
       <Project />
+      <EducationLicense />
       {children}
     </main>
   )

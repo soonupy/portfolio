@@ -5,6 +5,7 @@ import { FaReact } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaStarOfLife } from "react-icons/fa6";
 import { ContentTitle } from "../components/ContentTilte";
+import { Divider } from "../components/Divider";
 
 
 export const Career = () => {
@@ -16,18 +17,14 @@ export const Career = () => {
       }, []);
       
     return (
-        <section className="career-section hero-section">
-            <div className="inner">
+        <section className="timeline-section hero-section">
+            {/* <div className="inner"> */}
                 <ContentTitle subTitle="경력 사항" title="다양한 업무와 프로젝트를 통해 경험과 노하우를 쌓고 있습니다." />
-                <div className="content">
-                    <div className="career-content work_experience">
-                        <div className="divider">
-                            <span></span>
-                            <p>업무 경험</p>
-                            <span></span>
-                        </div>
-                        <div className="career-list">
-                            <div className="career-content">
+                {/* <div className="content"> */}
+                    <div className="content timeline-content work_experience">
+                        <Divider desc="업무 경험" />
+                        <div className="timeline-list">
+                            <div className="timeline-item">
                                 <h5 className="content-title">
                                     <i className="icon ico-md current"><FaStarOfLife /></i>
                                     2024 - 현재</h5>
@@ -76,7 +73,7 @@ export const Career = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="career-content">
+                            <div className="timeline-item">
                                 <h5 className="content-title">
                                     <i className="icon ico-md"><FaStarOfLife /></i>
                                     2022 - 2023</h5>
@@ -125,8 +122,8 @@ export const Career = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                {/* </div> */}
+            {/* </div> */}
         </section>
     );
 };

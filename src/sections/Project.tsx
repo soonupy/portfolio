@@ -1,13 +1,13 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { FaReact } from "react-icons/fa";
 import { ContentTitle } from "../components/ContentTilte";
 
 
 export const Project = () => {
-    const [isOpen0, setIsOpen0] = useState(false);
-    const [isOpen1, setIsOpen1] = useState(false);
+    // const [isOpen0, setIsOpen0] = useState(false);
+    // const [isOpen1, setIsOpen1] = useState(false);
 
     useEffect(() => {
         AOS.init({ duration: 6000, once: true });
