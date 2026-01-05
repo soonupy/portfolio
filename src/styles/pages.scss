@@ -1,7 +1,7 @@
 @use './mixin.scss' as *;
 @use './common.scss' as *;
 
-.particles-container {
+.background-effect {
     position: fixed;
     top: 0;
     left: 0;
@@ -10,11 +10,7 @@
     z-index: 99;
     background-color: $primary-bgc;
 
-    canvas {
-        position: absolute !important;
-        width: 100% !important;
-        height: 100% !important;
-    }
+
 }
 
 .main {
@@ -63,7 +59,7 @@
         border-radius: 999px;
 
         &.tool-bar {
-            margin-top: 2rem;
+            margin-bottom: 2rem;
             background-color: #fff;
             color: #333;
         }
@@ -209,6 +205,7 @@
 
         .title-block {
             text-align: center;
+            margin-bottom: 3rem;
             span {
                 color: $primary-color;
                 width: 100%;
@@ -225,7 +222,6 @@
         .content {
 
             text-align: left;
-            margin-top: 3rem;
             @include flex(column, center, center);
 
             ul[class="ability-list"] {
@@ -293,7 +289,7 @@
                     gap: 1rem;
                     width: 100%;
                     opacity: 0.75;
-                    margin-block: 3rem 2rem;
+                    margin-bottom: 2rem;
                     p {
                         font-size: 1rem;
                         color: #fff;
@@ -430,5 +426,48 @@ font-size: 1rem;
                 
         }
     }
+}
+&.project-section {
+    .content {
+        width: 100%;
+        .project-content {
+            width: 100%;
+
+            .project-list {
+                display: flex;
+                justify-content: space-between;
+                
+                .list-item {
+                    width: calc((100% - 3rem)/3);
+                    display: flex;
+                    flex-direction: column;
+                    padding: 1rem;
+                    border-radius: 0.5rem;
+                    border: 1px solid rgba(#fff, 0.1);
+
+                    .content-icon {
+                        margin-bottom: 1rem;
+                    }
+
+                    .content-title {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem;
+                    }
+                    .content-desc {
+                        font-size: 1rem;
+                        font-weight: 400;
+                        color: #a9a9a9;
+                        margin-bottom: 4rem;
+                    }
+
+                    .stack-list {
+                        display: flex;
+                        gap: 0.5rem;
+                    }
+                }
+        }
+    }
+}
 }
 }

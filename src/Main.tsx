@@ -4,10 +4,10 @@ import { Navigation } from './sections/Nav'
 import { Ability } from './sections/Ability'
 import { StackTool } from './sections/StackTool'
 import { Career } from './sections/Career'
+import { Project } from './sections/Project'
 // import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
-import "./effects/effect.scss";
 
 
 type MainProps = {
@@ -22,6 +22,7 @@ const Main = ({ children }: MainProps) => {
       <Ability />
       <StackTool />
       <Career />
+      <Project />
       {children}
     </main>
   )

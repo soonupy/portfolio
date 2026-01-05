@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { ContentTitle } from "../components/ContentTilte";
 
 
 
@@ -12,10 +13,7 @@ export const Ability = () => {
     return (
         <section className="ability-section hero-section">
             <div className="inner">
-                <div className="title-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-                    <span className="sub-title">핵심 역량</span>
-                    <h4 className="title">유연하게 소통하고 견고하게 개발합니다.</h4>
-                </div>
+                <ContentTitle subTitle="핵심 역량" title="유연하게 소통하고 견고하게 개발합니다." />
                 <div className="content">
     
                     <ul className="ability-list">

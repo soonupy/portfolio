@@ -1,7 +1,7 @@
 // import Header from './Header'
 // import Footer from './Footer'
 import Main from './Main'
-import Particles from './effects/ParticlesBg'
+import { DarkVeil } from './library/OglEffect';
 
 
 type LayoutProps = {
@@ -13,16 +13,9 @@ const Layout = ({ children }: LayoutProps) => {
     <>
       <div className="layout">
         {/* <Header /> */}
-        <Particles
-        particleColors={['#fff', '#fff']}
-        particleCount={200}
-        particleSpread={10}
-        speed={0.25}
-        particleBaseSize={50}
-        moveParticlesOnHover={true}
-        alphaParticles={false}
-        disableRotation={false}
-      />
+        <div className='background-effect'>
+  <DarkVeil hueShift={50} speed={3} />
+</div>
         <Main>
           {children}
         </Main>

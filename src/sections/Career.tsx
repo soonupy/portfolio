@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { FaReact } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaStarOfLife } from "react-icons/fa6";
+import { ContentTitle } from "../components/ContentTilte";
 
 
 export const Career = () => {
@@ -17,11 +18,7 @@ export const Career = () => {
     return (
         <section className="career-section hero-section">
             <div className="inner">
-                <div className="title-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-                    <span className="sub-title">경력 사항</span>
-                    <h4 className="title">다양한 업무와 프로젝트를 통해
-                    경험과 노하우를 쌓고 있습니다.</h4>
-                </div>
+                <ContentTitle subTitle="경력 사항" title="다양한 업무와 프로젝트를 통해 경험과 노하우를 쌓고 있습니다." />
                 <div className="content">
                     <div className="career-content work_experience">
                         <div className="divider">

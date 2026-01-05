@@ -22,7 +22,7 @@ import {
     SiVercel,
     SiNetlify
 } from "react-icons/si";
-
+import { ContentTitle } from "../components/ContentTilte";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -59,10 +59,7 @@ export const StackTool = () => {
     return (
         <section className="stack-tool-section hero-section">
                 <div className="inner"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-offset="400" >
-                    <div className="title-block">
-                        <span className="sub-title">기술 스택 및 도구</span>
-                        <h4 className="title">아래의 기술을 사용할 수 있습니다.</h4>
-                    </div>
+                    <ContentTitle subTitle="기술 스택 및 도구" title="아래의 기술을 사용할 수 있습니다." />
                     <div className="list-bar tool-bar">
                         <ul className="list tool-list">
                             {/* <li>
