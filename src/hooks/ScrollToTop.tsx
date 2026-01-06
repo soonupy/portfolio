@@ -1,14 +1,14 @@
-import { useCallback } from 'react';
+import { useCallback } from "react";
 
 interface ScrollToTopOptions {
-  behavior?: 'smooth' | 'instant';
+  behavior?: "smooth" | "instant";
   top?: number;
 }
 
 export const useScrollToTop = () => {
   const scrollToTop = useCallback((options: ScrollToTopOptions = {}) => {
-    const { behavior = 'smooth', top = 0 } = options;
-    
+    const { behavior = "smooth", top = 0 } = options;
+
     window.scrollTo({
       top,
       left: 0,
@@ -18,6 +18,5 @@ export const useScrollToTop = () => {
 
   return { scrollToTop };
 };
-
 
 export default useScrollToTop;

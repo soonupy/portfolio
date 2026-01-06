@@ -1,16 +1,13 @@
-
-
 type ContentTitleProps = {
-    desc?: string;
-}
+  desc?: string;
+};
 
 export const Divider = ({ desc }: ContentTitleProps) => {
-    return (
-        <div className="divider">
-                            <span></span>
-                            <p>{desc}</p>
-                            <span></span>
-                        </div>
-    )
-}
-
+  return (
+    <div className="divider">
+      <span></span>
+      <p>{desc}</p>
+      <span></span>
+    </div>
+  );
+};

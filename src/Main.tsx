@@ -1,25 +1,24 @@
 // src/Playground.tsx
-import { Introduce } from './sections/Introduce'
-import { Navigation } from './sections/Nav'
-import { Ability } from './sections/Ability'
-import { StackTool } from './sections/StackTool'
-import { Career } from './sections/Career'
-import { Project } from './sections/Project'
-import { EducationLicense } from './sections/EducationLicense'
+import { Introduce } from "./sections/Introduce";
+import { Navigation } from "./sections/Nav";
+import { Ability } from "./sections/Ability";
+import { StackTool } from "./sections/StackTool";
+import { Career } from "./sections/Career";
+import { Project } from "./sections/Project";
+import { EducationLicense } from "./sections/EducationLicense";
 // import Particles from './effects/ParticlesBg';
 
 import "@styles/index.scss";
 
-
 type MainProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
 const Main = ({ children }: MainProps) => {
   return (
     <main className="main">
-        <Introduce />
-        <Navigation />
+      <Introduce />
+      <Navigation />
       <Ability />
       <StackTool />
       <Career />
@@ -27,10 +26,7 @@ const Main = ({ children }: MainProps) => {
       <EducationLicense />
       {children}
     </main>
-  )
-}
+  );
+};
 
-export default Main
-
-
-
+export default Main;
