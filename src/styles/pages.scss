@@ -489,6 +489,7 @@
           .project-list {
             display: flex;
             justify-content: space-between;
+            flex-wrap: wrap;
 
             .list-item {
               width: calc((100% - 3rem) / 3);
@@ -497,6 +498,10 @@
               padding: 1rem;
               border-radius: 0.5rem;
               border: 1px solid rgba(#fff, 0.1);
+
+              @media (max-width: 768px) {
+                width: 100%;
+              }
 
               .content-icon {
                 margin-bottom: 1rem;
